@@ -1,0 +1,57 @@
+.aluno-card {
+  background: #fff;
+  border-left: 6px solid;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px;
+}
+
+.card-presente {
+  border-color: #16a34a;
+}
+
+.card-ausente {
+  border-color: #dc2626;
+}
+
+.aluno-card h2 {
+  color: #1f2937;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.aluno-card p {
+  color: #4b5563;
+}
+
+.status {
+  text-align: right;
+}
+
+.status button {
+  background: #1e40af;
+  border: 0;
+  border-radius: 6px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 10px 14px;
+}
+
+.status button:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 600px){
+    .aluno-card{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .status{
+        text-align: left;
+    }
+}
